@@ -2,16 +2,6 @@
 <!-- saved from url=(0018)https://zaouhp.jp/ -->
 <html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
     <script type="text/javascript" async="" src="./zaou_files/js(1)"></script><script type="text/javascript" async="" src="./zaou_files/js(2)"></script><script type="text/javascript" async="" src="./zaou_files/web-vitals.iife.js"></script><script type="text/javascript" async="" charset="utf-8" src="./zaou_files/recaptcha__ja.js" crossorigin="anonymous" integrity="sha384-7be0sjLxD0ApFNryq7JM/+H0XBQ5TE0vQAyK87IGTTnEWwgVgnPPwxx1vlxHKCb8"></script>
-    <!-- Google tag (gtag.js) -->
-<script async="" src="./zaou_files/js(3)"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WXR95CJZ9F');
-</script>
-
 	
 	<meta name="description" content="ザ王病院は鹿児島県姶良市加治木町にある病院です。各診療科目の他に「居宅介護支援事業所」「通所リハビリテーション」「訪問リハビリテーション」「介護療養型医療施設」「短期入所（ショートステイ）」も行っております。">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1572,113 +1562,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.1 }); 
 
    targets.forEach(target => observer.observe(target));
-});
-</script>
-<script>
-  window.addEventListener('load', function() {
-    const hashPattern = /^#wpcf7-/; // Contact Form 7 のリダイレクトを判別
-    const form = document.querySelector('form.wpcf7-form');
-    if (hashPattern.test(window.location.hash) && form) {
-      let eventName, eventCategory = 'contactform7', eventLabel, value;
-      if (form.classList.contains('sent') && form.getAttribute('data-status') === 'sent') {
-        eventName = 'form_submit_success'; eventLabel = 'フォーム送信成功'; value = 1;
-      } else if (form.classList.contains('invalid') && form.getAttribute('data-status') === 'invalid') {
-        eventName = 'form_input_error'; eventLabel = 'フォーム入力エラー'; value = 0;
-      }
-      if (eventName) {
-        try {
-          gtag('event', eventName, { event_category: eventCategory, event_label: eventLabel, value: value });
-        } catch (error) {}
-      }
-    }
-  });
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
-        link.addEventListener('click', () => {
-            gtag('event', 'click', {
-                link_url: link.href,
-                link_classes: link.className || '',
-                link_id: link.id || '',
-                event_category: 'tel_tap',
-                event_label: link.href
-            });
-        });
-    });
-});
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('a').forEach(function(link) {
-    var component = "不明";
-    if (link.closest('header.header .logo')) component = "ヘッダーロゴ";
-    else if (link.closest('header.header .free')) component = "ヘッダーのフリーエリア";
-    else if (link.closest('header.header .menu .main-menu .navigation')) component = "グローバルナビ";
-    else if (link.closest('.slideshow')) component = "メインビジュアル";
-    else if (link.closest('.shortcut')) component = "ショートカットエリア";
-    else if (link.closest('.lead-contents')) component = "リード文";
-    else if (link.closest('.page-list')) component = "ピックアップエリア";
-    else if (link.closest('.more.right')) component = "一覧を見る";
-    else if (link.closest('main') && !link.closest('.page-list')) component = "ページ内コンテンツ";
-    else if (link.closest('.side-contact.pc')) component = "PCフローティングバナー";
-    else if (link.closest('.footer-contact.sp')) component = "SPフローティングバナー";
-    else if (link.closest('.common-contents') && !link.closest('.side-contact.pc') && !link.closest('.footer-contact.sp')) component = "共通コンテンツ";
-    else if (link.closest('.pagetop-btn')) component = "ページトップボタン";
-    else if (link.closest('.topic-path')) component = "パンくずリスト";
-    else if (link.closest('.footer-contents .logo')) component = "フッターロゴ";
-    else if (link.closest('.footer-contents .free')) component = "フッターのフリーエリア";
-    else if (link.closest('.footer-contents .qr-contents')) component = "フッターのQRコード横";
-    else if (link.closest('footer.footer .guide')) component = "フッターナビゲーション";
-    else if (link.closest('.utilities .navigation')) component = "ページナビゲーション";
-    else if (link.closest('.utilities .free')) component = "ページ下部フリーエリア";
-    else if (link.closest('.utilities .banner')) component = "サイドバナー";
-
-    var linkType = link.querySelector('img') ? "画像" :
-                   (link.href === "#" || link.href.endsWith("#") || link.getAttribute('href') === 'javascript:void(0)') ? "空リンク" :
-                   "テキスト";
-
-    if (link.origin === window.location.origin || link.href === "#" || link.href.endsWith("#") || link.getAttribute('href') === 'javascript:void(0)') {
-      link.addEventListener('click', function() {
-        var navigationPath = link.pathname + link.hash;
-        gtag('event', 'internal_click', {
-          'event_category': 'click',
-          'event_label': 'navigation_path',
-          'value': '1',
-          'component': component,
-          'link_path': navigationPath,
-          'link_classes': link.className,
-          'link_text': link.textContent.trim().length > 0 ? link.textContent : "(画像/その他)",
-          'link_type': linkType,
-        });
-      });
-    }
-  });
-});
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var hasScrolled25 = false;
-  var hasScrolled50 = false;
-  var hasScrolled75 = false;
-  function checkScroll() {
-    var scrollPosition = window.pageYOffset + window.innerHeight;
-    var totalHeight = document.documentElement.scrollHeight;
-    var scrollPercentage = (scrollPosition / totalHeight) * 100;
-    if (!hasScrolled25 && scrollPercentage >= 25) {
-      hasScrolled25 = true;
-      gtag('event', 'scroll', {'event_category': 'scroll_percentage', 'event_label': 'scroll_25per', 'percent_scrolled': 25});
-    }
-    if (!hasScrolled50 && scrollPercentage >= 50) {
-      hasScrolled50 = true;
-      gtag('event', 'scroll', {'event_category': 'scroll_percentage', 'event_label': 'scroll_50per', 'percent_scrolled': 50});
-    }
-    if (!hasScrolled75 && scrollPercentage >= 75) {
-      hasScrolled75 = true;
-      gtag('event', 'scroll', {'event_category': 'scroll_percentage', 'event_label': 'scroll_75per', 'percent_scrolled': 75});
-    }
-  }
-  window.addEventListener('scroll', checkScroll);
 });
 </script>
 <script type="text/javascript" src="./zaou_files/hooks.min.js" id="wp-hooks-js"></script>
