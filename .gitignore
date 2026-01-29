@@ -1,0 +1,18 @@
+# ローカル開発用環境変数（機密情報を含むため除外）
+.dev.vars
+
+# Node.js依存関係
+node_modules/
+
+# Wrangler関連
+.wrangler/
+
+# macOS
+.DS_Store
+
+# エディタ設定
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
